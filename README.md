@@ -1,2 +1,2 @@
-# Smartband
-My customizable smart band 
+# Smartwatch
+My Customisable Smartwatch powered by a dedicated hardware and software.
