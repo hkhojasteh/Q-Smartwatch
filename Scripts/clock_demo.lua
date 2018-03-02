@@ -19,7 +19,7 @@ function draw_loop()
         tm = read_clock()
         if disp:nextPage() then
             disp:setFont(u8g.font_04b_03bn)
-            disp:drawStr90(15, 10, string.format("%04d/%02d/%02d", tm["year"], tm["mon"], tm["day"]))
+            disp:drawStr90(10, 10, string.format("%04d/%02d/%02d", tm["year"], tm["mon"], tm["day"]))
             disp:setFont(u8g.font_freedoomr25n)
             disp:drawStr90(25, 15, string.format("%02d", tm["sec"]))
             disp:drawStr90(55, 15, string.format("%02d", tm["min"]))
