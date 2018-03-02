@@ -26,8 +26,7 @@ function draw_loop()
 		prepare()
         tm = read_clock()
         if disp:nextPage() then
-            print(tm["sec"])
-			disp:drawStr(0, 0, tm["year"])
+			disp:drawStr(10, 10, string.format("%04d/%02d/%02d %02d:%02d:%02d", tm["year"], tm["mon"], tm["day"], tm["hour"], tm["min"], tm["sec"]))
             node.task.post(draw_pages)
         else
             node.task.post(graphics_test)
